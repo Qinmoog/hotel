@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百搭屋-微网站</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../gmu/css/calendars.css">
+	<link rel="stylesheet" href="../css/detail.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<style type="text/css">
+	.room_box{
+		border:1px solid #ccc;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="head_list">
+			   <a href="../index.html">返回</a>
+			   <span id="counts"></span>酒店详情
+		</header>
+		<div class="section" id="section">
+			<div class="scroll">
+				<div class="hotel_img" id="hotel_img">
+					<img src="" alt="">
+				</div>
+				<div class="info_wrap">
+					<ul class="base_info">
+						<li class="on">基本信息</li>
+						<li>酒店介绍</li>
+					</ul>
+					<div class="content_wrap">
+						<div class="cur_info">
+							<h2 id="hotel_name"></h2>
+							<ul id="hotel_info_list">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div>
+							<section>
+								<h3>酒店介绍</h3>
+								<article id="description"></article>
+								<p class="hotel_btn">展开详情</p>
+							</section>
+							<section>
+								<h3>酒店设施</h3>
+								<article id="sheshi"></article>
+								<p class="hotel_btn">展开详情</p>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="cal_list detail_cal">
+					   <p><label>入住</label><input type="hidden" id="date_in">&nbsp;&nbsp;<span id="inText"></span></p>
+					   <p><label>离店</label><input type="hidden" id="date_out">&nbsp;&nbsp;<span id="outText"></span></p>
+					   <input type="hidden" id="type_id">
+					   <input type="hidden" id="room_id">
+					   <h2 id="modify" data-type="detail">修改</h2>
+				</div>
+				<!--酒店列表-->
+				<div class="hotel_container">
+					<div class="detail_list" id="detail_list">
+					</div>
+					<!--加载更多-->
+					<div class="load_more">
+		                <span>点击记载更多</span>
+	                </div>
+	                <input type="hidden" id="img">
+	                <input type="hidden" id="price">
+	                <input type="hidden" id="room_name">
+	                <input type="hidden" id="room_id">
+				</div>
+			</div>
+		</div>
+		<div class="reserve" id="layer">
+		 <div class="close"></div>
+		 <dl>
+		     <dt><img id="pics"></dt>
+		     <dd>
+		         <h1 id="bed_name"></h1>
+		         <p id="book_price"></p>
+		     </dd>
+		 </dl>
+		 <ul>
+		     <li><span>12m</span>面积</li>
+		     <li><span>1人</span>可住</li>
+		     <li><span id="bed_type"></span>床型</li>
+		     <li><span>无</span>宽带</li>
+		     <li><span id="provide"></span>提供</li>
+		 </ul>
+		 <a href="javascript:void(0)" id="gotoOrder" class="reserveNow">立即预定</a>
+		</div>
+	</div>
+	<script src="../js/iscroll.js"></script>
+	<script src="../js/zepto.min.js"></script>
+	<script src="../js/event.js"></script>
+	<script src="../js/touch.js"></script>
+	<script src="../js/fx.js"></script>
+	<script src="../gmu/js/gmu.js"></script>
+	<script src="../gmu/js/event.js"></script>
+	<script src="../gmu/js/parseTpl.js"></script>
+	<script src="../gmu/js/touch.js"></script>
+	<script src="../gmu/js/widget.js"></script>
+	<script src="../gmu/js/highlight.js"></script>
+	<script src="../gmu/js/calendar.js"></script>
+	<script src="../gmu/js/$picker.js"></script>
+	<script src="../gmu/js/matchMedia.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/detail.js"></script>
+</body>
+</html>
